@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sankofa+Display&display=swap');
+html,body,h1,h2,h3,h4,p,div,span,ul,li,a{
+	direction: ltr;
+}
+body {
+	padding-top: 70px;
+	background-size: cover;
+	background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100% 100vh; /* Full height of the viewport */
+    color: #000;
+	font-family: 'Roboto';
+	font-size:14px;
+}
+
+body a {
+	text-decoration: none;
+}
+body a:hover {
+	text-decoration: underline;
+	color:#ed1c24;
+}
+
+/* Full screen loading wrapper */
+#loading {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999; /* Makes sure it's on top of other elements */
+}
+/* Image styling (optional) */
+#loading img {
+	width: 100px; /* You can adjust this based on your image */
+	height: 100px;
+}
+/* Page content starts hidden */
+#content {
+	display: none;
+}
+
+.btn{
+	border-radius:5px;
+	padding:5px 15px;
+}
+.btn-default{
+	background-color:#394084;
+	color:#fff;
+}
+.btn-default:hover{
+	color:#000;
+	background-color:#eee;
+	border:1px solid #394084;
+}
+.btn-secondary{
+	background-color:#999;
+	color:#fff;
+}
+.btn-secondary:hover{
+	color:#000;
+	background-color:#eee;
+	border:1px solid #999;
+}
+
+.switch-field {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: fit-content;
+}
+.switch-field input {
+    display: none;
+}
+.switch-field label {
+    padding:5px 15px;
+	border:1px solid #394084;
+    cursor: hand;
+    transition: all 0.3s ease-in-out;
+}
+.switch-field input:checked + label {
+    background-color: #394084;
+    color: white;
+}
+
+
+form {
+	width: 100%;
+}
+
+/* Style for Bootstrap 5 Submenu */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    display: none;
+    position: absolute;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.lbl {
+	font-weight: bold;
+}
+.textbox {
+	border: 1px solid #394084;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+.reversed-header {
+    background-color: #394084; /* dark gray */
+    color: #ffffff;            /* white text */
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.pagination {
+	display: inline-block;
+	padding-left: 0;
+	margin: 10px 0;
+	border-radius: 3px;
+}
+.pagination > li {
+	display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	line-height: 1.42857143;
+	text-decoration: none;
+	color: #373e4a;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	margin-left: -1px;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+	margin-left: 0;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+	z-index: 2;
+	color: #818da2;
+	background-color: #eeeeee;
+	border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+	z-index: 3;
+	color: #fff;
+	background-color: #373e4a;
+	border-color: #949494;
+	cursor: default;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+	color: #999999;
+	background-color: #fff;
+	border-color: #ddd;
+	cursor: not-allowed;
+}
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+	padding: 10px 16px;
+	font-size: 15px;
+	line-height: 1.3333333;
+}
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+	padding: 5px 10px;
+	font-size: 11px;
+	line-height: 1.5;
+}
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+	border-bottom-left-radius: 2px;
+	border-top-left-radius: 2px;
+}
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+	border-bottom-right-radius: 2px;
+	border-top-right-radius: 2px;
+}
+.insignificant {
+	background-color: #4ceb34;
+	color: #000;
+}
+.low {
+	background-color: #1a5c11;
+	color: #000;
+}
+.medium {
+	background-color: #f5e907;
+	color: #000;
+}
+.high {
+	background-color: #f74114;
+	color: #000;
+}
+.intolerable {
+	background-color: #9c1006;
+	color: #000;
+}
+
+
+@media (max-width: 600px) {
+.wd50{	
+	
+	width: 6rem!important;
+}
+}

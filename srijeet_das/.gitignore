@@ -1,0 +1,115 @@
+# ============================================================
+# Srijeet - CodeIgniter 3 / PHP / MySQL
+# ============================================================
+
+# ------------------------------------------------------------
+# Operating system files
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ------------------------------------------------------------
+# IDE / Editors
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# ------------------------------------------------------------
+# Environment / secrets
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# CodeIgniter configuration containing database credentials
+application/config/sq_config.php
+application/config/database.php
+
+# Local configuration
+application/config/config_local.php
+
+# ------------------------------------------------------------
+# CodeIgniter generated files
+# ------------------------------------------------------------
+
+# Logs
+application/logs/*
+!application/logs/index.html
+!application/logs/.gitkeep
+
+# Cache
+application/cache/*
+!application/cache/index.html
+!application/cache/.gitkeep
+
+# Sessions
+application/sessions/*
+!application/sessions/index.html
+!application/sessions/.gitkeep
+
+# ------------------------------------------------------------
+# Uploaded / generated files
+# ------------------------------------------------------------
+uploads/*
+!uploads/index.html
+!uploads/.gitkeep
+
+# User profile pictures
+uploads/user/picture/*
+
+# ------------------------------------------------------------
+# PHP / Composer
+# ------------------------------------------------------------
+vendor/
+
+# Keep composer.lock if your project uses Composer
+# composer.lock
+
+# ------------------------------------------------------------
+# Node / frontend tooling
+# ------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------
+# Testing / coverage
+# ------------------------------------------------------------
+coverage/
+.phpunit.result.cache
+
+# ------------------------------------------------------------
+# Database backup files
+# ------------------------------------------------------------
+*.dump
+*.bak.sql
+*.backup.sql
+
+# Do NOT use *.sql here.
+# Your sanitized SQL schema can be committed.
+
+# ------------------------------------------------------------
+# Temporary files
+# ------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+
+# ------------------------------------------------------------
+# Archives
+# ------------------------------------------------------------
+*.zip
+*.7z
+*.rar
+
+# ------------------------------------------------------------
+# Server-generated files
+# ------------------------------------------------------------
+php_errorlog
+error_log
